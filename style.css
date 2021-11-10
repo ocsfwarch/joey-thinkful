@@ -1,0 +1,61 @@
+header {
+  background-color: #0b1c51;
+  margin-bottom: 40px;
+}
+
+header .title {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 52px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Montserrat;
+  /* Applies 20 pixels of margin to the right of each link 
+     creating a visual gap between the navigation links. */
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  /* Removes the margin to the right of the last anchor tag 
+       so that the nav appears centered. */
+  margin-right: 0;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  header .title {
+    margin: 14px 0;
+    font-size: 48px;
+    padding-bottom: 10px;
+  }
+
+  header nav {
+    margin-top: 16px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
